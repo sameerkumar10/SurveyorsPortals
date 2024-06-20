@@ -1,0 +1,22 @@
+/// <reference types="react" />
+import { Base } from "survey-core";
+import { SurveyElementBase } from "survey-react-ui";
+import { TextareaJsonEditorModel, JsonEditorBaseModel } from "survey-creator-core";
+interface ITabJsonEditorTextareaComponentProps {
+    data: TextareaJsonEditorModel;
+}
+interface ITabJsonEditorErrorsProps {
+    data: JsonEditorBaseModel;
+}
+export declare class TabJsonEditorErrorsComponent extends SurveyElementBase<ITabJsonEditorErrorsProps, any> {
+    protected getStateElement(): Base;
+    private get model();
+    renderElement(): JSX.Element;
+}
+export declare class TabJsonEditorTextareaComponent extends SurveyElementBase<ITabJsonEditorTextareaComponentProps, any> {
+    constructor(props: any);
+    protected getStateElement(): Base;
+    private get model();
+    renderElement(): JSX.Element;
+}
+export {};

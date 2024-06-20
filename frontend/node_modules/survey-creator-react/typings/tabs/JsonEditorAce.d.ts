@@ -1,0 +1,16 @@
+/// <reference types="react" />
+import { Base } from "survey-core";
+import { SurveyElementBase } from "survey-react-ui";
+import { AceJsonEditorModel } from "survey-creator-core";
+interface ITabJsonEditorAceComponentProps {
+    data: AceJsonEditorModel;
+}
+export declare class TabJsonEditorAceComponent extends SurveyElementBase<ITabJsonEditorAceComponentProps, any> {
+    private aceEditorrRef;
+    constructor(props: ITabJsonEditorAceComponentProps);
+    protected getStateElement(): Base;
+    private get model();
+    componentDidMount(): void;
+    renderElement(): JSX.Element;
+}
+export {};

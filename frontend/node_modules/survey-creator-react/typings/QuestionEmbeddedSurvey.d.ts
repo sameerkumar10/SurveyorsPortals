@@ -1,0 +1,8 @@
+/// <reference types="react" />
+import { ISurveyCreator, SurveyQuestionElementBase } from "survey-react-ui";
+import { QuestionEmbeddedSurveyModel } from "survey-creator-core";
+export declare class SurveyElementEmbeddedSurvey extends SurveyQuestionElementBase {
+    protected get embeddedSurvey(): QuestionEmbeddedSurveyModel;
+    protected get creator(): ISurveyCreator;
+    render(): JSX.Element;
+}

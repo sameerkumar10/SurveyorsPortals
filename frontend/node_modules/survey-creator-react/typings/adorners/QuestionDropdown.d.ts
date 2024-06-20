@@ -1,0 +1,11 @@
+/// <reference types="react" />
+import { QuestionDropdownAdornerViewModel } from "survey-creator-core";
+import { QuestionSelectBase } from "survey-core";
+import { QuestionAdornerComponent, QuestionAdornerComponentProps } from "./Question";
+export declare class QuestionDropdownAdornerComponent extends QuestionAdornerComponent {
+    constructor(props: QuestionAdornerComponentProps);
+    protected createQuestionViewModel(props: any): QuestionDropdownAdornerViewModel;
+    get dropdownModel(): QuestionDropdownAdornerViewModel;
+    get question(): QuestionSelectBase;
+    renderElementPlaceholder(): JSX.Element;
+}
